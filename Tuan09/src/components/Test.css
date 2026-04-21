@@ -1,0 +1,155 @@
+* {
+  box-sizing: border-box;
+  font-family: Manrope, sans-serif;
+}
+
+.wrapper {
+  width: 996px;
+  height: 618px;
+  display: flex;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* LEFT */
+.left {
+  flex: 1;
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container {
+  width: 360px;
+}
+
+.form-container h2 {
+  margin-bottom: 20px;
+  color: #1f2937;
+}
+
+/* FORM */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* INPUT BOX (thu nhỏ lại) */
+.input-box {
+  display: flex;
+  flex-direction: column;
+  padding: 3px 5px; /* nhỏ hơn */
+  border-radius: 6px;
+  border: 1px solid transparent;
+  background: #f3f4f6;
+  transition: 0.2s;
+}
+
+/* LABEL */
+.input-box label {
+  font-size: 15px;
+  color: #000000; /* đen */
+  text-align: left; /* căn trái */
+  margin-bottom: 1px; /* giảm khoảng cách */
+}
+
+/* INPUT */
+.input-box input {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 15px;
+}
+
+/* HOVER */
+.input-box:hover {
+  background: #e5e7eb;
+}
+
+/* FOCUS */
+.input-box:focus-within {
+  background: #ffffff;
+  border: 1px solid #f44b87;
+}
+
+/* BUTTON SIGNUP */
+.signup-btn {
+  height: 44px;
+  border-radius: 6px;
+  border: none;
+  background: #f44b87;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0px 8px 17px #f44b873b;
+  transition: 0.2s;
+}
+
+.signup-btn:hover {
+  background: #f0105e;
+}
+
+/* TEXT */
+.divider {
+  text-align: center;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+/* SOCIAL */
+.social-group {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+/* SOCIAL BUTTON */
+.social-btn {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: none;
+  background: #e5e7eb;
+  cursor: pointer;
+  transition: 0.2s;
+  font-weight: bold;
+}
+
+/* hover */
+.social-btn:hover {
+  background: #d1d5db;
+}
+
+/* click */
+.social-btn:active {
+  background: #f44b87;
+  color: white;
+}
+
+/* ===== MÀU CHỮ RIÊNG ===== */
+.social-btn.google {
+  color: #ea4335; /* đỏ */
+}
+
+.social-btn.facebook {
+  color: #1877f2; /* xanh nước */
+}
+
+.social-btn.apple {
+  color: #000000;
+}
+
+/* RIGHT */
+.right {
+  flex: 1;
+  background: #f44b87;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.right img {
+  width: 80%;
+  object-fit: contain;
+}

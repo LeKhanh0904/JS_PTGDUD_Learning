@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+  font-family: Manrope, sans-serif;
+}
+
+.wrapper {
+  width: 996px;
+  height: 618px;
+  display: flex;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* LEFT */
+.left {
+  flex: 1;
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* FORM CONTAINER để title cùng cột */
+.form-container {
+  width: 360px;
+}
+
+.form-container h2 {
+  margin-bottom: 20px;
+  color: #1f2937;
+}
+
+/* FORM */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* INPUT */
+.form input {
+  height: 42px;
+  padding: 0 12px;
+  border-radius: 6px;
+  border: 1px solid transparent;
+  outline: none;
+  background: #f3f4f6; /* xám */
+  transition: 0.2s;
+}
+
+/* HOVER */
+.form input:hover {
+  background: #e5e7eb;
+}
+
+/* FOCUS */
+.form input:focus {
+  background: #ffffff;
+  border: 1px solid #f44b87; /* hồng */
+}
+
+/* SIGNUP BUTTON */
+.signup-btn {
+  height: 44px;
+  border-radius: 6px;
+  border: none;
+  background: #f44b87;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0px 8px 17px #f44b873b;
+  transition: 0.2s;
+}
+
+.signup-btn:hover {
+  background: #f0105e;
+}
+
+/* TEXT */
+.divider {
+  text-align: center;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+/* SOCIAL GROUP */
+.social-group {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+/* SOCIAL BUTTON */
+.social-btn {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: none;
+  background: #e5e7eb; /* xám */
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+/* hover */
+.social-btn:hover {
+  background: #d1d5db; /* xám đậm */
+}
+
+/* click */
+.social-btn:active {
+  background: #f44b87; /* hồng */
+  color: white;
+}
+
+/* RIGHT */
+.right {
+  flex: 1;
+  background: #f44b87;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.right img {
+  width: 80%;
+  object-fit: contain;
+}
